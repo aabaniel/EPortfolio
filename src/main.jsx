@@ -106,9 +106,10 @@ function App() {
             <a className="email" href="mailto:aaronabaniel@gmail.com">aaronabaniel@gmail.com</a>
           </div>
         </div>
-
+        <div className="experience-title">
+          <span>experience</span>
+        </div>
         <div className="skills">
-          <span className="skills-label">experienced in:</span>
           <div className="tech-icons">
             <span title="Python">python</span>
             <span title="C">c</span>
@@ -122,8 +123,10 @@ function App() {
           {skills.map((skill) => <span key={skill}>{skill}</span>)}
         </div>
 
-        <div className="language-row">
+        <div className="experience-title">
           <span>languages</span>
+        </div>
+        <div className="language-row">
           <span>english</span>
           <span>tagalog</span>
         </div>

@@ -249,11 +249,10 @@ h1 {
   justify-content: center;
   gap: 34px;
   align-items: center;
-  font: 16px "Space Mono", monospace;
+  font: 25px "Space Mono", monospace;
   margin: 10px 0 36px;
 }
 
-.language-row span:first-child { font-size: 25px; }
 
 blockquote {
   margin: 0 auto;
@@ -290,7 +289,7 @@ blockquote {
 
 .icon {
   display: block;
-  color: var(--gold);
+  color: var(--gold-dark);
   font-size: 31px;
   margin: 0 auto 5px;
 }
@@ -378,6 +377,7 @@ blockquote {
 
   .intro {
     margin-left: 0;
+    margin-bottom: 30px;
     text-align: center;
     padding-top: 20px;
   }
@@ -402,10 +402,15 @@ blockquote {
     margin: 8px auto 0;
   }
 
+  .experience-title {
+    margin-top:20px;
+    color: var(--gold-dark);
+  }
+
   .skills {
     flex-wrap: wrap;
     gap: 8px 20px;
-    margin-top: 22px;
+
   }
 
   .tech-icons {
