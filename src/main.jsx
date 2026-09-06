@@ -119,7 +119,7 @@ function App() {
           </div>
         </div>
 
-        <div className="pill-row">
+        <div className="subnav">
           {skills.map((skill) => <span key={skill}>{skill}</span>)}
         </div>
 
