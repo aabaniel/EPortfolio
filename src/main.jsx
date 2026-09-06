@@ -85,7 +85,7 @@ function App() {
       <section className="hero shell">
         <div className="profile-frame">
           <div className="profile-placeholder">
-            <img src="public/pic.png" alt="Aaron Abaniel"/>
+            <img src="/pic.png" alt="Aaron Abaniel"/>
           </div>
         </div>
 
