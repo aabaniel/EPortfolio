@@ -68,11 +68,10 @@ function Icon({ children }) {
 
 function SectionNav() {
   const items = [
-    ["education", "🎓"],
-    ["experience", "💼"],
-    ["works", "✚"],
-    ["achievements", "🏅"],
-    ["interests", "✎"],
+    ["education"],
+    ["experience"],
+    ["works"],
+    ["achievements"],
   ];
   return (
     <nav className="section-nav" aria-label="Portfolio sections">
@@ -124,7 +123,7 @@ function App() {
         </div>
 
         <div className="language-row">
-          <span>🌐</span>
+          <span>languages</span>
           <span>english</span>
           <span>tagalog</span>
         </div>
@@ -136,7 +135,7 @@ function App() {
         <SectionNav />
 
         <section id="education" className="content-section">
-          <Icon>🎓</Icon>
+          <Icon>education</Icon>
           {education.map(({ title, meta }) => (
             <article className="entry" key={title}>
               <h2>{title}</h2>
@@ -146,7 +145,7 @@ function App() {
         </section>
 
         <section id="experience" className="content-section">
-          <Icon>💼</Icon>
+          <Icon>experience</Icon>
           {experience.map(([title, meta]) => (
             <article className="entry compact" key={title}>
               <h2>{title}</h2>
@@ -156,7 +155,7 @@ function App() {
         </section>
 
         <section id="works" className="content-section">
-          <Icon>✚</Icon>
+          <Icon>works</Icon>
           {projects.map((project) => (
             <article className="project" key={project.title}>
               <h2>{project.title}</h2>
@@ -176,7 +175,7 @@ function App() {
         </div>
 
         <section id="achievements" className="content-section achievements">
-          <Icon>🏅</Icon>
+          <Icon>achievements</Icon>
           {achievements.map(([title, meta]) => (
             <article className="entry compact" key={title}>
               <h2>{title}</h2>
