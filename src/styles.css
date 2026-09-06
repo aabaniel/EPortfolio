@@ -264,7 +264,7 @@ blockquote {
 
 .section-nav {
   position: sticky;
-  top: 10px;
+  top: calc(44px + 10px);
   z-index: 10;
   display: flex;
   justify-content: space-evenly;
@@ -462,4 +462,7 @@ blockquote {
   .pill-row { border-radius: 10px; }
   .subnav { gap: 7px 15px; }
   blockquote { font-size: 14px; }
+  .section-nav {
+    top: calc(40px + 10px);
+  }
 }
