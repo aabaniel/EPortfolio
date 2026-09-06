@@ -24,6 +24,12 @@ const experience = [
 
 const projects = [
   {
+    title: "academic thesis / exploratory data analysis of an network intrusion detection system dataset",
+    meta: "2026  |  main proponent/developer",
+    body: "a research project that uses jupyter notebooks to analyze a network intrusion detection system dataset and train deep learning and machine learning models.",
+    link: "#",
+  },
+  {
     title: "academic project / api-based network threat visualizer application",
     meta: "2025  |  lead developer",
     body: "a threat intelligence application native on python that acquires data from APIs and visualizes key information such as related threat networks, malicious detections, and network origin.",
@@ -54,7 +60,7 @@ const achievements = [
   ["dbti makati / best in research award", "jun 2022"],
 ];
 
-const interests = ["others", "dean’s lister", "hs academic awardee with honors"];
+const interests = ["others", "dean’s lister", "academic awardee with honors"];
 
 function Icon({ children }) {
   return <span className="icon" aria-hidden="true">{children}</span>;
