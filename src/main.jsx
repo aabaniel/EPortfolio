@@ -108,8 +108,6 @@ function App() {
             <span title="Python">python</span>
             <span title="C">c</span>
             <span title="C++">c++</span>
-            <span title="Assembly">asm</span>
-            <span title="Ruby">ruby</span>
             <span title="Java">java</span>
             <span title="Javascript">javascript</span>
           </div>
