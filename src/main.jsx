@@ -27,19 +27,19 @@ const projects = [
     title: "academic thesis / exploratory data analysis of an network intrusion detection system dataset",
     meta: "2026  |  main proponent/developer",
     body: "a research project that uses jupyter notebooks to analyze a network intrusion detection system dataset and train deep learning and machine learning models.",
-    link: "#",
+    link: "https://github.com/aabaniel/ZeekData24-AI-Training",
   },
   {
     title: "academic project / api-based network threat visualizer application",
     meta: "2025  |  lead developer",
     body: "a threat intelligence application native on python that acquires data from APIs and visualizes key information such as related threat networks, malicious detections, and network origin.",
-    link: "#",
+    link: "https://github.com/aabaniel/ThreatViz_V2",
   },
   {
     title: "academic project / machine learning facial emotion recognition application",
     meta: "2025  |  lead developer",
     body: "a python project that uses machine learning to detect realtime facial emotions such as anger, happiness, sadness, disgust, and neutral.",
-    link: "#",
+    link: "https://github.com/shadowblade58/maclrn-facial",
   },
   {
     title: "classified company / enterprise resource planning application",
