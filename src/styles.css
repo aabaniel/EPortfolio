@@ -78,7 +78,7 @@ a:hover, .section-nav a:hover { color: var(--cream); transform: translateY(-3px)
   font: 700 14px "Space Mono", monospace;
   letter-spacing: 1px;
   z-index: 9999;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+  /*box-shadow: 0 2px 8px rgba(0,0,0,0.14);*/
 }
 
 /*
