@@ -52,12 +52,12 @@ const projects = [
       thumbnail: "/images/thesis.svg",
   },
   {
-    title: "academic project / api-based network threat visualizer application",
+    title: "ThreatViz / api-based network threat visualizer application",
     period: "2025  |  lead developer",
     story:
       "Led development of an API-driven threat visualizer that aggregates telemetry from multiple sources, maps related indicators, and presents concise visual stories to accelerate investigation and decision-making.",
       link: "https://github.com/aabaniel/ThreatViz_V2",
-      thumbnail: "/images/threat_visualizer.svg",
+      thumbnail: "/images/threat_visualizer.png",
   },
   {
     title: "academic project / machine learning facial emotion recognition application",
@@ -65,7 +65,7 @@ const projects = [
     story:
       "Led design of a realtime ML pipeline for facial emotion recognition: iterated on model architectures and preprocessing to balance accuracy and latency, and delivered prototypes for user testing and performance tuning.",
       link: "https://github.com/shadowblade58/maclrn-facial",
-      thumbnail: "/images/facial_ml.svg",
+      thumbnail: "/images/facial_ml.png",
   },
   {
     title: "classified company / enterprise resource planning application",
@@ -190,21 +190,27 @@ function App() {
 
         <section id="works" className="content-section">
           <Icon>works</Icon>
-          {projects.map(({ title, period, story, link, thumbnail }, idx) => (
-            <article className={`project ${idx % 2 === 1 ? 'alt' : ''}`} key={title}>
-              {thumbnail && (
-                <img src={thumbnail} alt={`${title} thumbnail`} className="project-thumb" />
-              )}
-              <div className="project-header">
-                <h2>{title}</h2>
-                <p className="meta">{period}</p>
-              </div>
-              <p>{story}</p>
-              {link && link !== "#" && (
-                <a href={link} target="_blank" rel="noreferrer">link</a>
-              )}
-            </article>
-          ))}
+          {projects.map(({ title, period, story, link, thumbnail }, idx) => {
+            const isPlaceholder = link === "#" || !thumbnail;
+            return (
+              <article className={`project ${idx % 2 === 1 ? 'alt' : ''} ${isPlaceholder ? 'placeholder' : ''}`} key={title}>
+                {!isPlaceholder && thumbnail && (
+                  <img src={thumbnail} alt={`${title} thumbnail`} className="project-thumb" />
+                )}
+                <div className="project-header">
+                  <h2>
+                    {link && link !== "#" ? (
+                      <a href={link} target="_blank" rel="noreferrer">{title}</a>
+                    ) : (
+                      title
+                    )}
+                  </h2>
+                  <p className="meta">{period}</p>
+                </div>
+                <p>{story}</p>
+              </article>
+            );
+          })}
         </section>
 
         <div className="subnav">
