@@ -2,7 +2,12 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 
-const skills = ["cybersecurity", "data privacy", "threat assessment", "governance, risk, and compliance"];
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+//                                    DATA SECTION
+
+////////////////////////////////////////////////////////////////////////////////////////
 
 const education = [
   {
@@ -43,37 +48,60 @@ const experience = [
 ];
 
 const projects = [
+    {
+    title: "mini-hackation / track and optimizization of daily time budget web application ",
+    period: "2026  |  developer / ux designer",
+    story:
+      "won 2nd place overall by building and deploying a vercel-hosted time-management app, cutting development time by 40% using claude code with deepseek flash for rapid prototyping, real-time tracking, and automated ci/cd.",
+      link: "https://github.com/aabaniel/CCM-App-TeamNieric",
+      thumbnail: "/images/budget.gif",
+      tags: ["javascript", "react", "vercel", "claude code"],
+  },
+
   {
     title: "academic thesis / exploratory data analysis of an network intrusion detection system dataset",
     period: "2026  |  main proponent/developer",
     story:
-      "Performed exploratory analysis of a network intrusion dataset using Jupyter notebooks: cleaned and visualized large-scale telemetry, engineered features for model training, and evaluated classical and deep learning approaches to surface actionable patterns and research directions.",
+      "performed exploratory analysis of a network intrusion dataset using jupyter notebooks: cleaned and visualized large-scale data, engineered features for model training, and evaluated classical and deep learning approaches to surface actionable patterns and research directions.",
       link: "https://github.com/aabaniel/ZeekData24-AI-Training",
-      thumbnail: "/images/thesis.svg",
+      thumbnail: "/images/Thesis.png",
+      tags: ["python", "jupyter", "pytorch", "tensorflow", "preprocessing", "model training", "deep learning", "machine learning"],
+  },
+  {
+    title: "concurrent syslog analytics server",
+    period: "2025 | developer",
+    story:
+      "this project is a distributed log analytics system designed for scalability and reliability in processing large log data. utilizing a decoupled system architecture, the system uses rabbitmq, docker compose, and mongodb as its main middlewares. rabbitmq is used for inter-process communication, mongodb’s sharded cluster is used for data storage, then docker’s compose is used for a plug-and-play-style system for quick and seamless feel. key mechanisms, including distributed locking and error handling, address challenges in concurrency and synchronization. ",
+    link: "#",
+    thumbnail: "/images/splanky.png",
+    tags: ["python", "javascript", "rabbitmq", "docker compose", "mongodb", "networking", "concurrency", "distributed systems"],
   },
   {
     title: "ThreatViz / api-based network threat visualizer application",
     period: "2025  |  lead developer",
     story:
-      "Led development of an API-driven threat visualizer that aggregates telemetry from multiple sources, maps related indicators, and presents concise visual stories to accelerate investigation and decision-making.",
+      "led development of an api-driven threat visualizer that aggregates telemetry from multiple sources, maps related indicators, and presents concise visual stories to accelerate investigation and decision-making.",
       link: "https://github.com/aabaniel/ThreatViz_V2",
-      thumbnail: "/images/threat_visualizer.png",
+      thumbnail: "/images/threat.gif",
+      tags: ["python", "fastapi", "virus total", "abuseipdb", "alienvaultotx", "matpltlib"],
   },
   {
     title: "academic project / machine learning facial emotion recognition application",
     period: "2025  |  lead developer",
     story:
-      "Led design of a realtime ML pipeline for facial emotion recognition: iterated on model architectures and preprocessing to balance accuracy and latency, and delivered prototypes for user testing and performance tuning.",
+      "led design of a realtime ml pipeline for facial emotion recognition: iterated on model architectures and preprocessing to balance accuracy and latency, and delivered prototypes for user testing and performance tuning.",
       link: "https://github.com/shadowblade58/maclrn-facial",
+      tags: ["jupyter", "python", "sklearn", "kaggle", "davilsena/ckdataset"],
       thumbnail: "/images/facial_ml.png",
   },
   {
     title: "classified company / enterprise resource planning application",
     period: "2024  |  lead developer  /  ux designer",
     story:
-      "Designed and shipped core ERP features spanning UX flows to backend integrations, prioritized reliability and operator efficiency, and collaborated with stakeholders to iterate on practical workflows.",
+      "designed and shipped core erp features spanning ux flows to backend integrations, prioritized reliability and operator efficiency, and collaborated with stakeholders to iterate on practical workflows.",
+      tags: ["html", "javascript", "css", "figma"],
       link: "#",
-      thumbnail: "/images/erp_app.svg",
+
   },
 ];
 
@@ -112,46 +140,136 @@ function SectionNav() {
   );
 }
 
+////////////////////////////////////////////////////////////////////////////////////////
+
+//                                    LAYOUT SECTION
+
+////////////////////////////////////////////////////////////////////////////////////////
+
 function App() {
+  const [emailNotice, setEmailNotice] = React.useState("");
+  const bubbles = React.useMemo(
+    () => [
+      { left: "8%", size: 7, duration: "9s", delay: "0s" },
+      { left: "18%", size: 11, duration: "12s", delay: "1.5s" },
+      { left: "31%", size: 6, duration: "10s", delay: "0.8s" },
+      { left: "46%", size: 12, duration: "13s", delay: "2.2s" },
+      { left: "59%", size: 8, duration: "11s", delay: "0.4s" },
+      { left: "74%", size: 10, duration: "12s", delay: "1.1s" },
+      { left: "88%", size: 7, duration: "9.5s", delay: "2.8s" },
+    ],
+    []
+  );
+
+  const handleEmailCopy = async (e) => {
+    e.preventDefault();
+    try {
+      await navigator.clipboard.writeText("aaronabaniel@gmail.com");
+      setEmailNotice("Email copied to clipboard");
+    } catch {
+      setEmailNotice("Copy failed");
+    }
+
+    if (handleEmailCopy.timeoutId) {
+      window.clearTimeout(handleEmailCopy.timeoutId);
+    }
+    handleEmailCopy.timeoutId = window.setTimeout(() => setEmailNotice(""), 2500);
+  };
+
   return (
-    <main>
+    <main style={{ position: "relative", zIndex: 0 }}>
+      <style>{`
+        @keyframes underwaterDrift {
+          0% { transform: translateY(0px); }
+          100% { transform: translateY(-24px); }
+        }
+        @keyframes bubbleRise {
+          0% { transform: translate3d(0, 0, 0); opacity: 0; }
+          12% { opacity: .45; }
+          100% { transform: translate3d(-8px, -110vh, 0); opacity: 0; }
+        }
+      `}</style>
+      <div
+        aria-hidden="true"
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: "none",
+          background:
+            "radial-gradient(1920px 1080px at 50% 120%, rgba(27,79,113,.45), transparent 65%), linear-gradient(180deg, #12314a 0%, #0f2738 45%, #0b1f2d 100%)",
+          //animation: "underwaterDrift 9s ease-in-out infinite alternate",
+        }}
+      >
+        {bubbles.map((bubble, i) => (
+          <span
+            key={i}
+            style={{
+              position: "absolute",
+              bottom: "-8%",
+              left: bubble.left,
+              width: `${bubble.size}px`,
+              height: `${bubble.size}px`,
+              borderRadius: "999px",
+              background: "rgba(210, 240, 255, 0.35)",
+              boxShadow: "0 0 8px rgba(210, 240, 255, 0.25)",
+              animation: `bubbleRise ${bubble.duration} linear ${bubble.delay} infinite`,
+            }}
+          ></span>
+        ))}
+      </div>
+      <div
+        aria-hidden="true"
+        style={{
+          position: "fixed",
+          inset: 0,
+          zIndex: 1,
+          pointerEvents: "none",
+          background: "transparent",
+        }}
+      />
+      {emailNotice && (
+        <div
+          className="in-body-notification subnav"
+          role="status"
+          aria-live="polite"
+          style={{
+            position: "fixed",
+            left: 0,
+            right: 0,
+            bottom: 0,
+            display: "flex",
+            justifyContent: "center",
+            padding: "0.75rem",
+            color: "#111", // dark font color
+            zIndex: 9999,
+          }}
+        >
+          {emailNotice}
+        </div>
+      )}
       <section className="hero shell">
         <div className="hero-top">
-          <div className="profile-frame">
-            <div className="profile-placeholder">
-              <img src="/pic.png" alt="Aaron Abaniel"/>
-            </div>
-          </div>
-
           <div className="intro">
             <div className="eyebrow">hi, my name is:</div>
             <h1>aaron abaniel</h1>
-            <p className="tagline">lifelong learner, flexible, tenacious</p>
+            <p className="tagline">computer science majoring in network and information security // de la salle manila</p>
             <div className="contact-row">
               <div className="links">
                 <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">linkedin</a>
                 <a href="https://github.com/" target="_blank" rel="noreferrer">github</a>
               </div>
-              <a className="email" href="mailto:aaronabaniel@gmail.com">aaronabaniel@gmail.com</a>
+              <a
+                className="email"
+                href="mailto:aaronabaniel@gmail.com"
+                onClick={handleEmailCopy}
+              >
+                aaronabaniel@gmail.com
+              </a>
             </div>
           </div>
         </div>
-        <div className="experience-title">
-          <span>experience</span>
-        </div>
-        <div className="skills">
-          <div className="tech-icons">
-            <span title="Python">python</span>
-            <span title="C">c</span>
-            <span title="C++">c++</span>
-            <span title="Java">java</span>
-            <span title="Javascript">javascript</span>
-          </div>
-        </div>
-
-        <div className="subnav">
-          {skills.map((skill) => <span key={skill}>{skill}</span>)}
-        </div>
+  
 
         <div className="experience-title">
           <span>languages</span>
@@ -161,7 +279,9 @@ function App() {
           <span>tagalog</span>
         </div>
 
-        <blockquote>“A jack of all trades is a master of none, but oftentimes better than a master of one”</blockquote>
+        <blockquote>im a cybersecurity student who blah blah blah blah </blockquote>
+        <p className="tagline">interested with iot and marine biology? i'd love to talk!</p>
+
       </section>
 
       <section className="shell">
@@ -190,24 +310,44 @@ function App() {
 
         <section id="works" className="content-section">
           <Icon>works</Icon>
-          {projects.map(({ title, period, story, link, thumbnail }, idx) => {
-            const isPlaceholder = link === "#" || !thumbnail;
+          {projects.map(({ title, period, story, link, thumbnail, tags }) => {
+            const isClosedSource = link === "#";
+            const hasThumbnail = !!thumbnail;
             return (
-              <article className={`project ${idx % 2 === 1 ? 'alt' : ''} ${isPlaceholder ? 'placeholder' : ''}`} key={title}>
-                {!isPlaceholder && thumbnail && (
-                  <img src={thumbnail} alt={`${title} thumbnail`} className="project-thumb" />
+              <article className={`project ${!hasThumbnail ? 'placeholder' : ''}`} key={title}>
+                <header className="project-card-header">
+                  <div className="project-title-block">
+                    <h2>{title}</h2>
+                    <p className="meta">{period}</p>
+                  </div>
+                  <span className="project-badge">
+                    {isClosedSource ? "closed source" : "open source"}
+                  </span>
+                </header>
+
+                {hasThumbnail && (
+                  <div className="project-banner">
+                    <img src={thumbnail} alt={`${title} thumbnail`} className="project-thumb" />
+                  </div>
                 )}
-                <div className="project-header">
-                  <h2>
-                    {link && link !== "#" ? (
-                      <a href={link} target="_blank" rel="noreferrer">{title}</a>
-                    ) : (
-                      title
-                    )}
-                  </h2>
-                  <p className="meta">{period}</p>
-                </div>
-                <p>{story}</p>
+
+                <p className="project-story">{story}</p>
+
+                {tags && tags.length > 0 && (
+                  <div className="project-tags">
+                    {tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
+                  </div>
+                )}
+
+                {isClosedSource ? (
+                  <p className="project-note">code available upon request</p>
+                ) : (
+                  <a className="project-link" href={link} target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
+                )}
               </article>
             );
           })}
@@ -231,11 +371,7 @@ function App() {
           ))}
         </section>
 
-        <div id="interests" className="subnav bottom">
-          {interests.map((interest, index) => (
-            <span key={interest} className={index === 1 ? "active-interest" : ""}>{interest}</span>
-          ))}
-        </div>
+       
       </section>
 
       <footer className="footer shell">
