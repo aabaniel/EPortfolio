@@ -196,8 +196,9 @@ function App() {
           inset: 0,
           zIndex: 0,
           pointerEvents: "none",
+          overflow: "hidden",
           background:
-            "linear-gradient(180deg, rgba(18,49,74,.98) 0%, rgba(15,39,56,.8) 60%, rgba(15,39,56,.58) 70%, rgba(11,31,45,.82) 90%, rgba(11,31,45,.98) 100%), url('/bkgrd.jpg')",
+            "linear-gradient(180deg, rgba(18,49,74,.98) 10%, rgba(15,39,56,.8) 60%, rgba(15,39,56,.88) 70%, rgba(11,31,45,.98) 90%, rgba(11,31,45,.98) 100%), url('/bkgrd.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -257,19 +258,6 @@ function App() {
             <div className="eyebrow">hi, my name is:</div>
             <h1>aaron abaniel</h1>
             <p className="tagline">computer science majoring in network and information security // de la salle manila</p>
-            <div className="contact-row">
-              <div className="links">
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">linkedin</a>
-                <a href="https://github.com/" target="_blank" rel="noreferrer">github</a>
-              </div>
-              <a
-                className="email"
-                href="mailto:aaronabaniel@gmail.com"
-                onClick={handleEmailCopy}
-              >
-                aaronabaniel@gmail.com
-              </a>
-            </div>
           </div>
         </div>
   
@@ -284,6 +272,11 @@ function App() {
 
         <blockquote>im a cybersecurity student who blah blah blah blah </blockquote>
         <p className="tagline">interested with iot and marine biology? i'd love to talk!</p>
+          <a
+                className="email"
+                href="mailto:aaronabaniel@gmail.com"
+                onClick={handleEmailCopy}
+                >aaronabaniel [at] gmail (dot) com</a>
 
       </section>
 

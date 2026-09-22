@@ -77,12 +77,27 @@ a:hover, .section-nav a:hover { color: var(--cream); transform: translateY(-3px)
   color: var(--bg);
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0 60px; /* horizontal breathing room for the text */
   font: 700 14px "Space Mono", monospace;
   letter-spacing: 1px;
   z-index: 9999;
   /*box-shadow: 0 2px 8px rgba(0,0,0,0.14);*/
+}
+
+.banner-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.banner-links a {
+  color: var(--bg);
+  text-decoration: none;
+}
+
+.banner-links a:hover {
+  text-decoration: underline;
 }
 
 /*
@@ -118,6 +133,10 @@ html {
   background: #0b1f2d;
   scrollbar-width: thin;
   scrollbar-color: var(--gold-dark) #1f1a15;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 /* themed scrollbar */
@@ -373,6 +392,7 @@ blockquote {
   font-size: 24px;
   line-height: 1.3;
   font-weight: 600;
+  overflow-wrap: anywhere;
 }
 
 .entry .meta,
@@ -465,12 +485,13 @@ blockquote {
 
 .project-thumb {
   width: 100%;
-  max-width: 100%;
+  max-width: 900px;
   height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 10px;
   display: block;
+  margin-inline: auto;
 }
 
 .project > p.project-story {
@@ -570,6 +591,14 @@ blockquote {
 
 /* Mobile */
 @media (max-width: 700px) {
+  .shell {
+    padding-inline: 20px;
+  }
+
+  .subnav {
+    width: 100%;
+  }
+
   .hero {
     min-height: auto;
     padding-bottom: 48px;
@@ -682,12 +711,19 @@ blockquote {
 
   .footer {
     padding-inline: 24px;
-    gap: 16px;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-credit {
+    position: static;
+    transform: none;
   }
 }
 
 @media (max-width: 430px) {
-  .shell { width: min(calc(100% - 22px), var(--max)); }
+  .shell { padding-inline: 16px; }
   .contact-row { font-size: 13px; gap: 16px; }
   .pill-row { border-radius: 10px; }
   .subnav { gap: 7px 15px; }
