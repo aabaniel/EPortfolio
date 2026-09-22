@@ -197,7 +197,10 @@ function App() {
           zIndex: 0,
           pointerEvents: "none",
           background:
-            "radial-gradient(1920px 1080px at 50% 120%, rgba(27,79,113,.45), transparent 65%), linear-gradient(180deg, #12314a 0%, #0f2738 45%, #0b1f2d 100%)",
+            "linear-gradient(180deg, rgba(18,49,74,.98) 0%, rgba(15,39,56,.8) 60%, rgba(15,39,56,.58) 70%, rgba(11,31,45,.82) 90%, rgba(11,31,45,.98) 100%), url('/bkgrd.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           //animation: "underwaterDrift 9s ease-in-out infinite alternate",
         }}
       >
@@ -376,6 +379,7 @@ function App() {
 
       <footer className="footer shell">
         <span>{new Date().getFullYear()} aaron abaniel</span>
+        <span className="image-credit">background image by marek okon</span>
         <a href="#top" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>back to top ↑</a>
       </footer>
     </main>

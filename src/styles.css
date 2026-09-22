@@ -115,7 +115,7 @@ body { padding-top: 44px; }
 
 html {
   scroll-behavior: smooth;
-  background: var(--bg);
+  background: #0b1f2d;
   scrollbar-width: thin;
   scrollbar-color: var(--gold-dark) #1f1a15;
 }
@@ -142,7 +142,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background: #0b1f2d;
   color: var(--gold);
   font-family: "Nunito Sans", Arial, sans-serif;
   text-align: center;
@@ -550,12 +550,21 @@ blockquote {
 .footer {
   border-top: 1px solid rgba(225,158,0,.18);
   padding: 40px 0 48px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
   font: 16px "Space Mono", monospace;
   color: var(--gold-dark);
+}
+
+.image-credit {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  opacity: .7;
 }
 /* ...existing code... */
 
