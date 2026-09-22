@@ -139,6 +139,12 @@ html, body {
   overflow-x: hidden;
 }
 
+@supports (overflow: clip) {
+  html, body {
+    overflow-x: clip;
+  }
+}
+
 /* themed scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
