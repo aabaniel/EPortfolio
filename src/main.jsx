@@ -11,36 +11,36 @@ import "./styles.css";
 
 const education = [
   {
-    title: "de la salle university manila / network and information security",
-    meta: "2022 - present | taft avenue, manila",
+    title: "De La Salle University Manila / Network and Information Security",
+    meta: "2022 - Present | Taft Avenue, Manila",
   },
   {
-    title: "don bosco technical institute makati / primary, secondary, senior high",
-    meta: "2011 - 2022 | chino roces avenue, makati",
+    title: "Don Bosco Technical Institute Makati / Primary, Secondary, Senior High",
+    meta: "2011 - 2022 | Chino Roces Avenue, Makati",
   },
 ];
 
 const experience = [
   {
-    title: "information security organization / assistant vice president for research and training",
-    period: "jan 2025 - aug 2025",
+    title: "Information Security Organization / Assistant Vice President for Research and Training",
+    period: "Jan 2025 - Aug 2025",
     story:
       "Translated academic research into practical training programs: designed and deployed a compact lab environment simulating real-world incidents, mentored interns through structured exercises, and presented evidence-backed findings to leadership to inform updated policies and training materials."
   },
   {
-    title: "computer studies government / executive for external relations",
-    period: "jan 2024 - aug 2024",
+    title: "Computer Studies Government / Executive for External Relations",
+    period: "Jan 2024 - Aug 2024",
     story:
       "Distilled complex technical analysis into decision-ready briefings: prepared executive summaries and visualizations, coordinated cross-functional workshops, and communicated engineering trade-offs to non-technical stakeholders during a high-stakes rollout."
   },
   {
-    title: "prodigy infotech (india) / internship trainee",
-    period: "may 2024 - jun 2024",
+    title: "Prodigy Infotech (India) / Internship Trainee",
+    period: "May 2024 - Jun 2024",
     story:
       "Implemented automation that reduced manual monitoring effort, contributed code to production pipelines, and collaborated with senior engineers to deliver incremental improvements under tight timelines."
   },
   {
-    title: "dbti makati swim team / member",
+    title: "DBTI Makati Swim Team / Member",
     period: "2016 - 2020",
     story:
       "Developed discipline and teamwork through competitive swimming: cultivated a practice-first mindset, supported teammates during competitions, and demonstrated consistent performance under pressure."
@@ -49,74 +49,74 @@ const experience = [
 
 const projects = [
     {
-    title: "mini-hackation / track and optimizization of daily time budget web application ",
-    period: "2026  |  developer / ux designer",
+    title: "Mini-Hackathon / Track and Optimization of Daily Time Budget Web Application ",
+    period: "2026  |  Developer / UX Designer",
     story:
-      "won 2nd place overall by building and deploying a vercel-hosted time-management app, cutting development time by 40% using claude code with deepseek flash for rapid prototyping, real-time tracking, and automated ci/cd.",
+      "Won 2nd place overall by building and deploying a Vercel-hosted time-management app, cutting development time by 40% using Claude Code with DeepSeek Flash for rapid prototyping, real-time tracking, and automated CI/CD.",
       link: "https://github.com/aabaniel/CCM-App-TeamNieric",
       thumbnail: "/images/budget.gif",
-      tags: ["javascript", "react", "vercel", "claude code"],
+      tags: ["JavaScript", "React", "Vercel", "Claude Code"],
   },
 
   {
-    title: "academic thesis / exploratory data analysis of an network intrusion detection system dataset",
-    period: "2026  |  main proponent/developer",
+    title: "Academic Thesis / Exploratory Data Analysis of a Network Intrusion Detection System Dataset",
+    period: "2026  |  Main Proponent/Developer",
     story:
-      "performed exploratory analysis of a network intrusion dataset using jupyter notebooks: cleaned and visualized large-scale data, engineered features for model training, and evaluated classical and deep learning approaches to surface actionable patterns and research directions.",
+      "Performed exploratory analysis of a network intrusion dataset using Jupyter Notebooks: cleaned and visualized large-scale data, engineered features for model training, and evaluated classical and deep learning approaches to surface actionable patterns and research directions.",
       link: "https://github.com/aabaniel/ZeekData24-AI-Training",
       thumbnail: "/images/Thesis.png",
-      tags: ["python", "jupyter", "pytorch", "tensorflow", "preprocessing", "model training", "deep learning", "machine learning"],
+      tags: ["Python", "Jupyter", "PyTorch", "TensorFlow", "Preprocessing", "Model Training", "Deep Learning", "Machine Learning"],
   },
   {
-    title: "concurrent syslog analytics server",
-    period: "2025 | developer",
+    title: "Concurrent Syslog Analytics Server",
+    period: "2025 | Developer",
     story:
-      "this project is a distributed log analytics system designed for scalability and reliability in processing large log data. utilizing a decoupled system architecture, the system uses rabbitmq, docker compose, and mongodb as its main middlewares. rabbitmq is used for inter-process communication, mongodb’s sharded cluster is used for data storage, then docker’s compose is used for a plug-and-play-style system for quick and seamless feel. key mechanisms, including distributed locking and error handling, address challenges in concurrency and synchronization. ",
+      "This project is a distributed log analytics system designed for scalability and reliability in processing large log data. Utilizing a decoupled system architecture, the system uses RabbitMQ, Docker Compose, and MongoDB as its main middleware. RabbitMQ is used for inter-process communication, MongoDB’s sharded cluster is used for data storage, and Docker Compose is used for a plug-and-play-style system for a quick and seamless feel. Key mechanisms, including distributed locking and error handling, address challenges in concurrency and synchronization. ",
     link: "#",
     thumbnail: "/images/splanky.png",
-    tags: ["python", "javascript", "rabbitmq", "docker compose", "mongodb", "networking", "concurrency", "distributed systems"],
+    tags: ["Python", "JavaScript", "RabbitMQ", "Docker Compose", "MongoDB", "Networking", "Concurrency", "Distributed Systems"],
   },
   {
-    title: "ThreatViz / api-based network threat visualizer application",
-    period: "2025  |  lead developer",
+    title: "ThreatViz / API-Based Network Threat Visualizer Application",
+    period: "2025  |  Lead Developer",
     story:
-      "led development of an api-driven threat visualizer that aggregates telemetry from multiple sources, maps related indicators, and presents concise visual stories to accelerate investigation and decision-making.",
+      "Led development of an API-driven threat visualizer that aggregates telemetry from multiple sources, maps related indicators, and presents concise visual stories to accelerate investigation and decision-making.",
       link: "https://github.com/aabaniel/ThreatViz_V2",
       thumbnail: "/images/threat.gif",
-      tags: ["python", "fastapi", "virus total", "abuseipdb", "alienvaultotx", "matpltlib"],
+      tags: ["Python", "FastAPI", "VirusTotal", "AbuseIPDB", "AlienVault OTX", "Matplotlib"],
   },
   {
-    title: "academic project / machine learning facial emotion recognition application",
-    period: "2025  |  lead developer",
+    title: "Academic Project / Machine Learning Facial Emotion Classification Application",
+    period: "2025  |  Lead Developer",
     story:
-      "led design of a realtime ml pipeline for facial emotion recognition: iterated on model architectures and preprocessing to balance accuracy and latency, and delivered prototypes for user testing and performance tuning.",
+      "Led design of a real-time ML pipeline for facial emotion classification: iterated on model architectures and preprocessing to balance accuracy and latency, and delivered prototypes for user testing and performance tuning.",
       link: "https://github.com/shadowblade58/maclrn-facial",
-      tags: ["jupyter", "python", "sklearn", "kaggle", "davilsena/ckdataset"],
+      tags: ["Jupyter", "Python", "scikit-learn", "Kaggle", "davilsena/ckdataset"],
       thumbnail: "/images/facial_ml.png",
   },
   {
-    title: "classified company / enterprise resource planning application",
-    period: "2024  |  lead developer  /  ux designer",
+    title: "Classified Company / Enterprise Resource Planning Application",
+    period: "2024  |  Lead Developer  /  UX Designer",
     story:
-      "designed and shipped core erp features spanning ux flows to backend integrations, prioritized reliability and operator efficiency, and collaborated with stakeholders to iterate on practical workflows.",
-      tags: ["html", "javascript", "css", "figma"],
+      "Designed and shipped core ERP features spanning UX flows to backend integrations, prioritized reliability and operator efficiency, and collaborated with stakeholders to iterate on practical workflows.",
+      tags: ["HTML", "JavaScript", "CSS", "Figma"],
       link: "#",
 
   },
 ];
 
 const achievements = [
-  ["ibm / cybersecurity fundamentals", "jan 2026"],
-  ["ibm / getting started with cybersecurity", "jan 2026"],
-  ["alibaba cloud / ai compute services fostering infrastructure and platform facilities", "oct 2025 - expires oct 2027"],
-  ["cyber5w / c5w-100", "jan 2025"],
-  ["cisco / introduction to cybersecurity", "may 2024"],
-  ["cisco / introduction to packet tracer", "may 2024"],
-  ["dbti makati / best paper presenter", "jun 2022"],
-  ["dbti makati / best in research award", "jun 2022"],
+  ["IBM / Cybersecurity Fundamentals", "Jan 2026"],
+  ["IBM / Getting Started with Cybersecurity", "Jan 2026"],
+  ["Alibaba Cloud / AI Compute Services Fostering Infrastructure and Platform Facilities", "Oct 2025 - Expires Oct 2027"],
+  ["Cyber5W / C5W-100", "Jan 2025"],
+  ["Cisco / Introduction to Cybersecurity", "May 2024"],
+  ["Cisco / Introduction to Packet Tracer", "May 2024"],
+  ["DBTI Makati / Best Paper Presenter", "Jun 2022"],
+  ["DBTI Makati / Best in Research Award", "Jun 2022"],
 ];
 
-const interests = ["others", "dean’s lister", "academic awardee with honors"];
+const interests = ["Others", "Dean’s Lister", "Academic Awardee with Honors"];
 
 function Icon({ children }) {
   return <span className="icon" aria-hidden="true">{children}</span>;
@@ -133,7 +133,7 @@ function SectionNav() {
     <nav className="section-nav" aria-label="Portfolio sections">
       {items.map(([label, icon]) => (
         <a href={`#${label}`} key={label}>
-          {label} <span>{icon}</span>
+          {label.charAt(0).toUpperCase() + label.slice(1)} <span>{icon}</span>
         </a>
       ))}
     </nav>
@@ -255,23 +255,23 @@ function App() {
       <section className="hero shell">
         <div className="hero-top">
           <div className="intro">
-            <div className="eyebrow">hi, my name is:</div>
-            <h1>aaron abaniel</h1>
-            <p className="tagline">computer science majoring in network and information security // de la salle manila</p>
+            <div className="eyebrow">Hi, my name is:</div>
+            <h1>Aaron Abaniel</h1>
+            <p className="tagline">Computer Science major in Network and Information Security // De La Salle Manila</p>
           </div>
         </div>
   
 
         <div className="experience-title">
-          <span>languages</span>
+          <span>Languages</span>
         </div>
         <div className="language-row">
-          <span>english</span>
-          <span>tagalog</span>
+          <span>English</span>
+          <span>Tagalog</span>
         </div>
 
-        <blockquote>im a cybersecurity student who blah blah blah blah </blockquote>
-        <p className="tagline">interested with iot and marine biology? i'd love to talk!</p>
+        <blockquote>A cybersecurity student who blah blah blah blah </blockquote>
+        <p className="tagline">Interested in IoT and marine biology? I'd love to talk!</p>
           <a
                 className="email"
                 href="mailto:aaronabaniel@gmail.com"
@@ -284,7 +284,7 @@ function App() {
         <SectionNav />
 
         <section id="education" className="content-section">
-          <Icon>education</Icon>
+          <Icon>Education</Icon>
           {education.map(({ title, meta }) => (
             <article className="entry" key={title}>
               <h2>{title}</h2>
@@ -294,7 +294,7 @@ function App() {
         </section>
 
         <section id="experience" className="content-section">
-          <Icon>experience</Icon>
+          <Icon>Experience</Icon>
           {experience.map(({ title, period, story }) => (
             <article className="entry compact" key={title}>
               <h2>{title}</h2>
@@ -305,7 +305,7 @@ function App() {
         </section>
 
         <section id="works" className="content-section">
-          <Icon>works</Icon>
+          <Icon>Works</Icon>
           {projects.map(({ title, period, story, link, thumbnail, tags }) => {
             const isClosedSource = link === "#";
             const hasThumbnail = !!thumbnail;
@@ -317,7 +317,7 @@ function App() {
                     <p className="meta">{period}</p>
                   </div>
                   <span className="project-badge">
-                    {isClosedSource ? "closed source" : "open source"}
+                    {isClosedSource ? "Closed Source" : "Open Source"}
                   </span>
                 </header>
 
@@ -338,7 +338,7 @@ function App() {
                 )}
 
                 {isClosedSource ? (
-                  <p className="project-note">code available upon request</p>
+                  <p className="project-note">Code available upon request</p>
                 ) : (
                   <a className="project-link" href={link} target="_blank" rel="noreferrer">
                     GitHub
@@ -350,15 +350,15 @@ function App() {
         </section>
 
         <div className="subnav">
-          <span>others</span>
+          <span>Others</span>
           <span className="active-marker"></span>
-          <span>whitehat hacking</span>
-          <span>threat assessment</span>
-          <span>infrastructure cabling</span>
+          <span>White-Hat Hacking</span>
+          <span>Threat Assessment</span>
+          <span>Infrastructure Cabling</span>
         </div>
 
         <section id="achievements" className="content-section achievements">
-          <Icon>achievements</Icon>
+          <Icon>Achievements</Icon>
           {achievements.map(([title, meta]) => (
             <article className="entry compact" key={title}>
               <h2>{title}</h2>
@@ -371,9 +371,9 @@ function App() {
       </section>
 
       <footer className="footer shell">
-        <span>{new Date().getFullYear()} aaron abaniel</span>
-        <span className="image-credit">background image by marek okon</span>
-        <a href="#top" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>back to top ↑</a>
+        <span>{new Date().getFullYear()} Aaron Abaniel</span>
+        <span className="image-credit">Background image by Marek Okon</span>
+        <a href="#top" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>Back to top ↑</a>
       </footer>
     </main>
   );
