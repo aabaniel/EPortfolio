@@ -25,19 +25,19 @@ const experience = [
     title: "Information Security Organization / Assistant Vice President for Research and Training",
     period: "Jan 2025 - Aug 2025",
     story:
-      "Translated academic research into practical training programs: designed and deployed a compact lab environment simulating real-world incidents, mentored interns through structured exercises, and presented evidence-backed findings to leadership to inform updated policies and training materials."
+      "Researched emerging cybersecurity technologies and threat intelligence to support organizational initiatives and organized technical workshops and training sessions to enhance members' cybersecurity knowledge and skills."
   },
   {
     title: "Computer Studies Government / Executive for External Relations",
     period: "Jan 2024 - Aug 2024",
     story:
-      "Distilled complex technical analysis into decision-ready briefings: prepared executive summaries and visualizations, coordinated cross-functional workshops, and communicated engineering trade-offs to non-technical stakeholders during a high-stakes rollout."
+      "Managed partnerships with student organizations, industry partners, and sponsors for college-wide events and coordinated logistics and technical operations for events serving over 2,000 College of Computer Studies students."
   },
   {
     title: "Prodigy Infotech (India) / Internship Trainee",
     period: "May 2024 - Jun 2024",
     story:
-      "Implemented automation that reduced manual monitoring effort, contributed code to production pipelines, and collaborated with senior engineers to deliver incremental improvements under tight timelines."
+      "Conducted a deeper analysis into multiple key topics and programming best practices based on Cybersecurity."
   },
   {
     title: "DBTI Makati Swim Team / Member",
